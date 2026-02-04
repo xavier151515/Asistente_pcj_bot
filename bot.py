@@ -11,7 +11,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # El token se tomará de la variable de entorno
-TOKEN = os.environ.get("TOKEN_BOT")
+TOKEN = os.environ.get("8555813721:AAGUPCse67ekXW8QsT_xTP3kHJWOQ3zY1_s")
 
 def welcome(update: Update, context: CallbackContext):
     """Envía mensaje cuando alguien nuevo se une"""
