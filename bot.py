@@ -3,7 +3,8 @@ from telegram import Update
 from telegram.ext import Application, ContextTypes, MessageHandler
 from telegram.ext import filters
 
-# Token de tu bot (cambia esto por tu token real)
+# ⚠️⚠️⚠️ REEMPLAZA ESTO CON TU NUEVO TOKEN ⚠️⚠️⚠️
+# Obtén un nuevo token de @BotFather después de revocar el anterior
 TOKEN = "8555813721:AAGUPCse67ekXW8QsT_xTP3kHJWOQ3zY1_s"
 
 async def welcome_new_member(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -36,7 +37,8 @@ def main():
     
     # Iniciar el bot
     print("🤖 Bot iniciado - Esperando nuevos miembros...")
-    app.run_polling(allowed_updates=Update.ALL_TYPES)
+    print("🛡️  Token protegido")
+    app.run_polling()
 
 if __name__ == '__main__':
     main()
